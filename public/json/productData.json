@@ -1,0 +1,20 @@
+[
+    {"id": 1,
+      "name": "Computadora de escritorio",
+      "price": 1690,
+      "category": 1,
+      "image": "img/computadora.webp"
+    },
+    {"id": 2,
+      "name": "Laptop",
+      "price": 1200,
+      "category": 2,
+      "image": "img/laptop.webp"
+    },
+    {"id": 3,
+      "name": "Tablet",
+      "price": 830,
+      "category": 2,
+      "image": "img/tablet.webp"
+    }
+  ]

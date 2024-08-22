@@ -1,0 +1,19 @@
+
+<div class="container-fluid text-center">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"> <a routerLink="/pokemons" routerLinkActive="router-link-active" >Products</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{products?.name}}</li>
+        </ol>
+      </nav>
+      
+<div class="card" style="width: 18rem;">
+    <img [src]="products?.image" class="card-img-top" [alt]="products?.name">
+    <div class="card-body">
+      <h5 class="card-title">{{products?.name}}</h5>
+      <p class="card-text"> Weight: {{products?.price}} $</p>
+      <a class="btn btn-primary">Show Info</a>
+    </div>
+  </div>
+</div>
