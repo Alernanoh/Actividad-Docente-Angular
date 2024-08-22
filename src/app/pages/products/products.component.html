@@ -8,7 +8,9 @@
         <div class="card-body">
           <h5 class="card-title">Desktop PC</h5>
           <p class="card-text">Powerfull PC for games and work, your best choice if you're not leaving your home.</p>
-          <a class="btn btn-primary" (click)="onClickTable(products)">Ver</a>
+          <a *ngFor="let product of products"
+             style="cursor: pointer;"
+             (click)="onClickTable(product)">Ver</a>
         </div>
       </div>
       <br>
@@ -21,7 +23,9 @@
         <div class="card-body">
           <h5 class="card-title">Laptop</h5>
           <p class="card-text">Best choice if you prefer moving around.</p>
-          <a  class="btn btn-primary" (click)="onClickTable(products)">Ver</a>
+          <a *ngFor="let product of products"
+             style="cursor: pointer;"
+             (click)="onClickTable(product)">Ver</a>
         </div>
       </div>
       <br>
@@ -34,7 +38,9 @@
         <div class="card-body">
           <h5 class="card-title">Tablet</h5>
           <p class="card-text">Excelent option if you prefer a lightweight equipment and don't do exigent tasks.</p>
-          <a  class="btn btn-primary" (click)="onClickTable(products)" >Ver</a>
+          <a *ngFor="let product of products"
+             style="cursor: pointer;"
+             (click)="onClickTable(product)">Ver</a>
         </div>
       </div>
       <br>
