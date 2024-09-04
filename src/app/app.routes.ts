@@ -6,11 +6,12 @@ import { Error404Component } from './pages/error404/error404.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { permissionsGuard } from './guards/permissions.guard';
 
 export const routes: Routes = [
     {path: 'home', component: HomeComponent},
     {path: 'products', component: ProductsComponent},
-    {path: 'aboutus', component: AboutusComponent},
+    {path: 'aboutus', component: AboutusComponent, canActivate: [permissionsGuard]},
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
     {path: '', redirectTo: 'home', pathMatch: 'full'},
