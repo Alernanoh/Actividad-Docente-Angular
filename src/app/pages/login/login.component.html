@@ -1,0 +1,42 @@
+    <form [formGroup]="form">
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo</label>
+            <input type="email"
+                class="form-control"
+                id="email" formControlName="email">
+            <div class="invalid-feedback">
+                El correo es obligatorio
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password"
+                class="form-control"
+                id="password" formControlName="password">
+            <div class="invalid-feedback">
+                La contraseña es obligatoria
+            </div>
+        </div>
+        <button
+            class="btn btn-primary"
+            type="button"
+            routerLink="/register"
+            style="margin-inline: 10px;">Registrarme</button>
+        <button
+            class="btn btn-outline-success"
+            type="button"
+            (click)="onClickLogin()"
+            rotuerLink="/login"
+            style="margin-inline: 10px;">Iniciar Sesión</button>
+
+                <button
+                    class="btn btn-outline-danger"
+                    type="button"
+                    (click)="onClickLogout()"
+                    style="margin-inline: 10px;">Cerrar Sesión</button>
+                <button
+            class="btn btn-primary"
+            type="button"
+            (click)="onClickLoginGoogle()"
+            style="margin-inline: 10px;">Iniciar Sesión con Google</button>
+    </form>
